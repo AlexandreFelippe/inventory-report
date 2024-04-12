@@ -6,5 +6,5 @@ class Report(Protocol):
     def add_inventory(self, inventory: Inventory) -> None:
         pass
 
-    def generate(self):
-        pass
+    def generate(self) -> str:
+        raise NotImplementedError
